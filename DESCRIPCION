@@ -2,9 +2,10 @@ A raiz de una perdida de refrigerante por la rotura de un manguito de plastico d
 mi Scenic. 
 Afortunadamente, me di cuenta de que perdía refrigerante y, rellenando el deposito de expansión, pude llegar hasta un taller y repararlo. 
 Si esto me hubiera ocurrido en un viaje largo, posiblemente hubiera quemado la junta de la culata, ya que no sé de nadie que este 
-constantemente comprobando la temperatura del motor mientras conduce. Para evitar que pueda volver a ocurrir, he montado un detector 
-de nivel en el vaso de expansión de refrigerante y lo he conectado a un arduino nano. He procurado ser lo menos invasivo posible en
-la mecanica del coche y he optado por utilizar un sensor de nivel de liquido sin contacto del tipo XKC-Y25-NPN. 
+constantemente comprobando la temperatura del motor mientras conduce. 
+Para evitar que pueda volver a ocurrir, he montado un detector de nivel en el vaso de expansión de refrigerante y lo he conectado 
+a un arduino nano. 
+He procurado ser lo menos invasivo posible en la mecanica del coche y he optado por utilizar un sensor de nivel de liquido sin contacto del tipo XKC-Y25-NPN. 
 Especificaciones: 
 Modelo: XKC-Y25-NPN 
 Salida de aviso: NPN 
