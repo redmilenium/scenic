@@ -2,8 +2,8 @@
 //26/04/2019 CAMBIO LOS DELAYS POR MILLIS()
 //02/05/2019 LA CAJA DEBE LLEVAR INTERRUPTOR DE APAGADO Y EN EL ARRANQUE, EL BUZZER EMITE 3 BIP´S
 //Entradas  DETECTOR NIVEL D5
-//Salidas: LED D7
-//         BUZZER D11,D12
+//Salidas: LED D8
+//         BUZZER D11
 
   //ENTRADA
 const int Detector = 5;     //Detector nivel
