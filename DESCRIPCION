@@ -1,12 +1,15 @@
 A raiz de una perdida de refrigerante por la rotura de un manguito de plastico de 7 euros, he estado a punto de quemar el motor de 
 mi Scenic. 
-Afortunadamente, me di cuenta de que perdía refrigerante y, rellenando el deposito de expansión, pude llegar hasta un taller y repararlo. 
+Afortunadamente, me di cuenta de dicha perdida y, rellenando el deposito de expansión, pude llegar hasta un taller y repararlo. 
 Si esto me hubiera ocurrido en un viaje largo, posiblemente hubiera quemado la junta de la culata, ya que no sé de nadie que este 
 constantemente comprobando la temperatura del motor mientras conduce. 
 Para evitar que pueda volver a ocurrir, he montado un detector de nivel en el vaso de expansión de refrigerante y lo he conectado 
 a un arduino nano. 
+En caso de detectar nivel bajo, el arduino genera un tono oscilante y enciende un led.
 He procurado ser lo menos invasivo posible en la mecanica del coche y he optado por utilizar un sensor de nivel de liquido sin contacto 
 del tipo XKC-Y25-NPN. 
+De esta manera no tengo me agujerear el vaso de expansión para detectar el nivel.
+
 Especificaciones: 
 Modelo: XKC-Y25-NPN 
 Salida de aviso: NPN 
@@ -26,7 +29,8 @@ que el calor no afecte a su funcionamiento.
 Aunque, según fabricante soporta hasta 105°. Lo he probado en un viaje largo durante esta última ola de calor (29/06/19 - 40° de máxima)
 y ha sobrevivido.
 
-La señal del sensor la recoge un arduino nano, al que ademas he conectado un buzzer. 
+La señal del sensor la recoge un arduino nano, al que ademas he conectado un buzzer y un led.
+
 Dado que los movimientos del coche pueden provocar falsos positivos al moverse el liquido refrigerante dentro del vaso de expansión,
 he colocado un pequeña rutina que solo dispara el buzzer en caso de detectar la falta de refrigerante durante al menos 3 segundos
 consecutivos. 
