@@ -5,7 +5,8 @@ Si esto me hubiera ocurrido en un viaje largo, posiblemente hubiera quemado la j
 constantemente comprobando la temperatura del motor mientras conduce. 
 Para evitar que pueda volver a ocurrir, he montado un detector de nivel en el vaso de expansión de refrigerante y lo he conectado 
 a un arduino nano. 
-He procurado ser lo menos invasivo posible en la mecanica del coche y he optado por utilizar un sensor de nivel de liquido sin contacto del tipo XKC-Y25-NPN. 
+He procurado ser lo menos invasivo posible en la mecanica del coche y he optado por utilizar un sensor de nivel de liquido sin contacto 
+del tipo XKC-Y25-NPN. 
 Especificaciones: 
 Modelo: XKC-Y25-NPN 
 Salida de aviso: NPN 
@@ -27,7 +28,8 @@ y ha sobrevivido.
 
 La señal del sensor la recoge un arduino nano, al que ademas he conectado un buzzer. 
 Dado que los movimientos del coche pueden provocar falsos positivos al moverse el liquido refrigerante dentro del vaso de expansión,
-he colocado un pequeña rutina que solo dispara el buzzer en caso de detectar la falta de refrigerante durante al menos 3 segundos. 
+he colocado un pequeña rutina que solo dispara el buzzer en caso de detectar la falta de refrigerante durante al menos 3 segundos
+consecutivos. 
 En la practica, mediante esta rutina, no he detectado falsos positivos.
 El programa es muy sencillo. 
 El arduino deberemos alimentarlo a 12 voltios desde, por ejemplo, los cables de la toma de mechero 
