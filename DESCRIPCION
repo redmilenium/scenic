@@ -35,6 +35,6 @@ Dado que los movimientos del coche pueden provocar falsos positivos al moverse e
 he colocado un pequeña rutina que solo dispara el buzzer en caso de detectar la falta de refrigerante durante al menos 3 segundos
 consecutivos. 
 En la practica, mediante esta rutina, no he detectado falsos positivos.
-El programa es muy sencillo. 
+El programa es muy sencillo y se encuentra dentro del repositorio (radiador3.ino)
 El arduino deberemos alimentarlo a 12 voltios desde, por ejemplo, los cables de la toma de mechero 
 situada al lado del conductor. Habitualmente esta toma solo esta alimentada cuando el contacto del coche esta dado.
