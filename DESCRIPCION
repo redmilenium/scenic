@@ -26,15 +26,17 @@ Material: ABS Protección de ingreso: IP67
 El sensor va pegado mediante cinta de doble cara al vaso de expansión y sujeto, además, con bridas de plastico. 
 La cinta de doble cara, tiene un "doble" cometido: sujetar el sensor al vaso de expansión y separarlo lo suficiente como para 
 que el calor no afecte a su funcionamiento. 
-Aunque, según fabricante soporta hasta 105°. Lo he probado en un viaje largo durante esta última ola de calor (29/06/19 - 40° de máxima)
-y ha sobrevivido.
+Aunque, según fabricante soporta hasta 105°... pero por si acaso.
+Lo he probado en un viaje largo durante esta última ola de calor (29/06/19 - 40° de máxima)y ha sobrevivido sin problemas.
 
 La señal del sensor la recoge un arduino nano, al que ademas he conectado un buzzer y un led.
 
 Dado que los movimientos del coche pueden provocar falsos positivos al moverse el liquido refrigerante dentro del vaso de expansión,
 he colocado un pequeña rutina que solo dispara el buzzer en caso de detectar la falta de refrigerante durante al menos 3 segundos
 consecutivos. 
+
 En la practica, mediante esta rutina, no he detectado falsos positivos.
 El programa es muy sencillo y se encuentra dentro del repositorio (RADIADOR_3.ino)
+
 El arduino deberemos alimentarlo a 12 voltios desde, por ejemplo, los cables de la toma de mechero 
 situada al lado del conductor. Habitualmente esta toma solo esta alimentada cuando el contacto del coche esta dado.
